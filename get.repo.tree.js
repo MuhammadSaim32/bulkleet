@@ -27,7 +27,7 @@ export async function upload_readme() {
   };
 
   const user = await fetch(
-    `  https://api.github.com/repos/${process.env.OWNER_NAME}/dsa/contents/readme.md`,
+    `  https://api.github.com/repos/${process.env.OWNER_NAME}/${process.env.REPO_NAME}/contents/readme.md`,
     {
       method: "PUT",
       headers: {

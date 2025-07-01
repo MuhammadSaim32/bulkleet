@@ -26,7 +26,7 @@ async function get_question_topic(title_slug) {
 
 async function check_question_exist(title_slug, lang, topic) {
   const response = await fetch(
-    `https://api.github.com/repos/${process.env.OWNER_NAME}/dsa/contents/${topic}/${title_slug}.${lang}`,
+    `https://api.github.com/repos/${process.env.OWNER_NAME}/${process.env.REPO_NAME}/contents/${topic}/${title_slug}.${lang}`,
     {
       method: "GET",
       headers: {
@@ -53,7 +53,7 @@ async function commit_file(topic, title_slug, lang, code) {
   };
 
   const response = await fetch(
-    `  https://api.github.com/repos/${process.env.OWNER_NAME}/dsa/contents/${topic}/${title_slug}.${lang}`,
+    `  https://api.github.com/repos/${process.env.OWNER_NAME}/${process.env.REPO_NAME}/contents/${topic}/${title_slug}.${lang}`,
     {
       method: "PUT",
       headers: {
@@ -82,7 +82,7 @@ async function upload_question(code, title_slug, lang) {
 async function upload_all_questions(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (
-      arr[i].lang == `${process.env.lang}` &&
+      arr[i].lang == `${process.env.LANG}` &&
       arr[i].status_display == `${process.env.QUESTION_STATUS}`
     ) {
       await upload_question(arr[i].code, arr[i].title_slug, arr[i].lang);
