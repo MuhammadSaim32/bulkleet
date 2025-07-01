@@ -1,0 +1,17 @@
+{
+  "name": "bulkleet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Bulk upload your solved LeetCode problems to GitHub — organized by topic with automatic README upload",
+  "dependencies": {
+    "@leetnotion/leetcode-api": "^1.10.0",
+    "dotenv": "^17.0.0"
+  }
+}
