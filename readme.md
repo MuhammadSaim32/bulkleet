@@ -63,4 +63,4 @@ Once you have configured your `.env` file, simply run the script from your termi
 npm start
 ```
 
-The script will begin fetching your submissions, uploading them to your specified repository, and finally, updating the `README.md` file in that repository.
+The script will begin fetching your submissions, uploading them to your specified repository, and finally, uploading the `README.md` file in that repository.
