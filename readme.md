@@ -64,3 +64,9 @@ npm start
 ```
 
 The script will begin fetching your submissions, uploading them to your specified repository, and finally, uploading the `README.md` file in that repository.
+
+
+### Sample README file 
+
+![Alt Text](./assets/readme.png)  
+You can customize it from the `write.readme.file.js` file if you want.
