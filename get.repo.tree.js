@@ -16,7 +16,7 @@ async function get_repo_tree(url) {
 }
 
 export async function upload_readme() {
-  const readme = readFileSync("./readme.md", "utf8");
+  const readme = readFileSync("./readme_file.md", "utf8");
   let obj = {
     message: "readme_updated",
     committer: {

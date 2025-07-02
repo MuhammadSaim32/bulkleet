@@ -52,7 +52,7 @@ BulkLeet is a  script that automates the process of fetching your solved LeetCod
     -   `OWNER_NAME`: Your GitHub username.
     -   `OWNER_EMAIL`: The email address associated with your GitHub account.
     -   `QUESTION_STATUS`: The submission status to filter for. `Accepted` is recommended.
-    -   `LANG`: The programming language of the submissions you want to upload (e.g., `cpp`, `python`, `java`).
+    -   `QUESTION_LANG`: The programming language of the submissions you want to upload (e.g., `cpp`, `python`, `java`).
     -   `REPO_NAME`: The name of the GitHub repository where your solutions will be uploaded. The repository must exist before running the script.
 
 ## Usage

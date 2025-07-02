@@ -67,6 +67,7 @@ async function commit_file(topic, title_slug, lang, code) {
 }
 
 async function upload_question(code, title_slug, lang) {
+
   const topic = await retry_request(get_question_topic, title_slug);
   let check = await retry_request(
     check_question_exist,
@@ -82,9 +83,10 @@ async function upload_question(code, title_slug, lang) {
 async function upload_all_questions(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (
-      arr[i].lang == `${process.env.LANG}` &&
-      arr[i].status_display == `${process.env.QUESTION_STATUS}`
+     ( arr[i].lang == `${process.env.QUESTION_LANG}`) &&
+      (arr[i].status_display == `${process.env.QUESTION_STATUS}`)
     ) {
+
       await upload_question(arr[i].code, arr[i].title_slug, arr[i].lang);
     }
   }
