@@ -70,3 +70,9 @@ The script will begin fetching your submissions, uploading them to your specifie
 
 ![Alt Text](./assets/readme.png)  
 You can customize it from the `write.readme.file.js` file if you want.
+
+## 📽️ Demo
+
+[*(video)*](https://www.linkedin.com/feed/update/urn:li:activity:7346163161168842752/)
+---
+
